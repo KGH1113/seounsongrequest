@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="assets/css/index.css">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>점심시간 노래 신청하기</title>
+</head>
+<body>
+    <form class="form-box">
+        <div class="wraper">
+            <h2>Request</h2>
+            <div class="inputbox">
+                <ion-icon name="person-outline"></ion-icon>
+                <input type="text" id="user-name" autocomplete="off" required>
+                <label>Your Name</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="pricetag-outline"></ion-icon>
+                <input type="text" id="school-number" autocomplete="off" required>
+                <label>Your School Number</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="musical-notes-outline"></ion-icon>
+                <input type="text" id="song-name" autocomplete="off" required>
+                <label>Song Title</label>
+            </div>
+            <div class="inputbox">
+                <ion-icon name="musical-note-outline"></ion-icon>
+                <input type="text" id="artist" autocomplete="off" required>
+                <label>Artist</label>
+            </div>
+            <button id="submit-btn">Request</button>
+            <div class="seerequest-link">
+                <p><a href="./seerequest.html">View Requests</a></p>
+            </div>
+        </div>
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
+    <script type="module" src="assets/scripts/script.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.10/dist/sweetalert2.min.js"></script>
+</body>
+</html>
